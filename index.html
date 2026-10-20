@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Slides App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Edit screen -->
+  <div id="editScreen">
+    <div class="top">
+      <b>Slides App</b>
+      <span>
+        <span id="msg"></span>
+        <button id="saveBtn">Save</button>
+        <button id="presentBtn">Present</button>
+      </span>
+    </div>
+
+    <div class="main">
+      <textarea id="editor"></textarea>
+
+      <div class="viewer">
+        <div id="slide" class="slide"></div>
+        <div class="buttons">
+          <button id="left">Left</button>
+          <button id="right">Right</button>
+          <button id="full">Full Screen</button>
+        </div>
+        <div id="count" class="count"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Presentation screen -->
+  <div id="presentScreen" class="hidden">
+    <div id="pslide" class="slide"></div>
+    <div class="buttons">
+      <button id="pleft">Left</button>
+      <button id="pright">Right</button>
+      <button id="pfull">Exit Full Screen</button>
+    </div>
+    <div id="pcount" class="count"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
